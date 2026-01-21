@@ -138,7 +138,7 @@ José Daniel Conejeros
 </div>
 </div>
 
-  <p class="date">11 de enero de 2026</p>
+  <p class="date">21 de enero de 2026</p>
 </section>
 <section id="contenido" class="slide level2">
 <h2>Contenido</h2>
@@ -151,94 +151,367 @@ José Daniel Conejeros
 <li><strong>Asistente de IA</strong></li>
 </ol>
 </section>
+<section class="slide level2">
+
+</section>
+<section>
+<section id="interfaz-de-positron" class="title-slide slide level1 center">
+<h1>Interfaz de Positron</h1>
+
+</section>
 <section id="componentes-principales-de-la-interfaz" class="slide level2">
 <h2>Componentes principales de la interfaz</h2>
+
+<img data-src="Images/positron.jpeg" style="width:80.0%" class="r-stretch"></section>
+<section id="componentes-principales-de-la-interfaz-1" class="slide level2">
+<h2>Componentes principales de la interfaz</h2>
+<ul>
+<li><strong>Activity Bar</strong>: Acceso rápido a vistas principales (Explorer, Search, Source Control, Extensions)</li>
+<li><strong>Primary Side Bar</strong>: Muestra contenido según la vista seleccionada (archivos, outline, Assistant)</li>
+<li><strong>Editor</strong>: Área central para escribir código, basado en VS Code</li>
+<li><strong>Panel</strong>: Consola interactiva integrada y Terminal debajo del editor</li>
+<li><strong>Secondary Side Bar</strong>: Panel derecho con Session (variables, plots), Connections, Help, History, Viewer</li>
+<li><strong>Title Bar y Top Bar</strong>: Muestra archivo activo, selector de intérprete, herramientas globales</li>
+<li><strong>Status Bar</strong>: Información de git branch, modo de lenguaje, versión Quarto, posición del cursor</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/layout.html">Layout de Positron</a></p>
 </section>
 <section id="layout-de-positron" class="slide level2">
 <h2>Layout de Positron</h2>
+<ul>
+<li><strong>Stacked</strong> (por defecto): Editor arriba, Consola y Terminal abajo, Variables y Plots a la derecha</li>
+<li><strong>Side-by-side</strong>: Editor y consola lado a lado, útil para pantallas anchas</li>
+<li><strong>Notebook</strong>: Enfocado en el editor, minimiza otros panes para trabajar con notebooks</li>
+<li><strong>Assistant</strong>: Optimizado para flujo de trabajo centrado en el Assistant</li>
+<li>Componentes arrastrables y personalizables según tu flujo de trabajo</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/layout.html">Layout de Positron</a></p>
 </section>
 <section id="personalización-de-la-interfaz" class="slide level2">
 <h2>Personalización de la interfaz</h2>
+<ul>
+<li>Arrastrar y reorganizar componentes según necesidades</li>
+<li>Comandos para mostrar/ocultar paneles (View: Toggle Primary Side Bar, etc.)</li>
+<li>Presets de layout específicos para ciencia de datos</li>
+<li>Comando “Customize Layout…” para opciones más específicas</li>
+<li>Reset completo del UI a valores por defecto disponible</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/layout.html">Layout de Positron</a></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="migración-desde-rstudio" class="title-slide slide level1 center">
+<h1>Migración desde RStudio</h1>
+
 </section>
 <section id="por-qué-migrar-a-positron" class="slide level2">
 <h2>¿Por qué migrar a Positron?</h2>
+<ul>
+<li><strong>IDE unificado</strong>: Explora y produce en un solo entorno gratuito asistido por IA</li>
+<li><strong>Multi-lenguaje nativo</strong>: Python y R en el mismo entorno</li>
+<li><strong>Basado en Code OSS</strong>: Misma base que VS Code, con funcionalidades añadidas para ciencia de datos</li>
+<li><strong>Asistente de IA integrado</strong>: Positron Assistant diseñado específicamente para ciencia de datos</li>
+<li><strong>Licencia gratuita</strong>: Elastic License 2.0, código fuente disponible</li>
+<li><strong>Creado por Posit</strong>: Los mismos creadores de RStudio</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/">Positron</a> | <a href="https://positron.posit.co/migrate-rstudio.html">Migración desde RStudio</a></p>
 </section>
+<section id="por-qué-migrar-a-positron-1" class="slide level2">
+<h2>¿Por qué migrar a Positron?</h2>
+
+<img data-src="Images/rstudio_vs_positron.jpeg" style="width:80.0%" class="r-stretch"></section>
 <section id="guía-de-migración" class="slide level2">
 <h2>Guía de migración</h2>
+<ul>
+<li><strong>Command Palette</strong> es fundamental: Presiona <code>Cmd+Shift+P</code> (Mac) o <code>Ctrl+Shift+P</code> (Windows/Linux)</li>
+<li>Muchas acciones de RStudio están disponibles como comandos en el Command Palette</li>
+<li>Atajos de teclado de RStudio disponibles como opción configurable</li>
+<li>La mayoría de la documentación de VS Code aplica también a Positron</li>
+<li>Walkthrough interactivo: Comando “Welcome: Open Walkthrough…” → “Migrating from RStudio to Positron”</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/migrate-rstudio.html">Migración desde RStudio</a></p>
 </section>
 <section id="comparación-rstudio-vs-positron" class="slide level2">
 <h2>Comparación RStudio vs Positron</h2>
+<ul>
+<li><strong>Base</strong>: RStudio es propietario; Positron basado en Code OSS (open source)</li>
+<li><strong>Multi-lenguaje</strong>: RStudio enfocado en R; Positron nativo para Python y R</li>
+<li><strong>IA</strong>: RStudio sin IA integrada; Positron con Assistant integrado</li>
+<li><strong>Git</strong>: RStudio con pane básico; Positron con integración avanzada heredada de VS Code</li>
+<li><strong>Extensiones</strong>: RStudio limitado; Positron con ecosistema completo de VS Code</li>
+<li><strong>Command Palette</strong>: RStudio lo agregó tarde; Positron lo usa como método principal de navegación</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/migrate-rstudio.html">Migración desde RStudio</a></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="escritura-de-código-en-r" class="title-slide slide level1 center">
+<h1>Escritura de código en R</h1>
+
 </section>
 <section id="data-explorer" class="slide level2">
 <h2>Data Explorer</h2>
+<ul>
+<li><strong>Vista de datos tipo hoja de cálculo</strong>: Visualización interactiva de dataframes y archivos CSV/Parquet</li>
+<li><strong>Panel de resumen</strong>: Estadísticas descriptivas para cada columna del dataset</li>
+<li><strong>Barra de filtros</strong>: Filtros temporales para columnas específicas</li>
+<li><strong>Complementa código</strong>: Diseñado para complementar workflows basados en código, no reemplazarlos</li>
+<li><strong>Abre desde Variables Pane</strong>: Click en el ícono del dataframe en el panel de variables</li>
+<li><strong>Comandos</strong>: <code>View(dataframe, "label")</code> en R o <code>%view dataframe label</code> en Python</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/data-explorer.html">Data Explorer</a></p>
 </section>
+<section id="data-explorer-1" class="slide level2">
+<h2>Data Explorer</h2>
+
+<img data-src="Images/positron_data_explorer.png" style="width:80.0%" class="r-stretch"></section>
 <section id="ejecución-de-código-r" class="slide level2">
 <h2>Ejecución de código R</h2>
-</section>
-<section id="ejemplo-exploración-de-datos" class="slide level2">
-<h2>Ejemplo: Exploración de datos</h2>
+<ul>
+<li><strong>Consola integrada</strong>: Consola completamente interactiva en el Panel</li>
+<li><strong>Ejecución desde editor</strong>: Seleccionar código y ejecutar con atajos de teclado</li>
+<li><strong>Terminal integrado</strong>: Terminal del sistema también disponible en el Panel</li>
+<li><strong>Output channels</strong>: Logs y salidas disponibles en canales del Panel</li>
+<li><strong>Soporte para notebooks</strong>: Jupyter notebooks y documentos Quarto ejecutables directamente</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/layout.html">Layout de Positron</a></p>
 </section>
 <section id="panel-de-variables" class="slide level2">
 <h2>Panel de Variables</h2>
+<ul>
+<li><strong>Session Pane</strong>: Vista de todas las variables definidas en tu sesión activa</li>
+<li><strong>Exploración de objetos</strong>: Navegación jerárquica de estructuras de datos complejas</li>
+<li><strong>Vista de plots</strong>: Visualización de gráficos generados en la sesión</li>
+<li><strong>Integración con Data Explorer</strong>: Click en dataframes para abrir en Data Explorer</li>
+<li><strong>Información contextual</strong>: Detalles sobre tipos, dimensiones y estructura de objetos</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/layout.html">Layout de Positron</a></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="git-y-github" class="title-slide slide level1 center">
+<h1>Git y GitHub</h1>
+
 </section>
 <section id="qué-es-git" class="slide level2">
 <h2>¿Qué es Git?</h2>
+<ul>
+<li><strong>Sistema de control de versiones distribuido</strong>: Rastrea cambios en archivos a lo largo del tiempo</li>
+<li><strong>Historial completo</strong>: Mantiene registro de todas las versiones de tu proyecto</li>
+<li><strong>Trabajo con ramas</strong>: Permite trabajar en diferentes features simultáneamente</li>
+<li><strong>Colaboración</strong>: Facilita trabajo en equipo en el mismo código</li>
+<li><strong>Revertir cambios</strong>: Posibilidad de volver a versiones anteriores cuando sea necesario</li>
+<li><strong>Fusionar cambios</strong>: Integra trabajo de diferentes contribuidores</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/git.html">Git en Positron</a></p>
 </section>
 <section id="conceptos-fundamentales" class="slide level2">
 <h2>Conceptos fundamentales</h2>
+<ul>
+<li><strong>Repositorio</strong>: Carpeta con historial de cambios, puede ser local o remoto</li>
+<li><strong>Commit</strong>: Snapshot de cambios con mensaje descriptivo</li>
+<li><strong>Branch (rama)</strong>: Línea de desarrollo independiente para experimentar sin riesgo</li>
+<li><strong>Merge</strong>: Combinar cambios de diferentes ramas</li>
+<li><strong>Remote</strong>: Repositorio en servidor (GitHub, GitLab) para sincronización</li>
+<li><strong>Pull/Push</strong>: Traer/enviar cambios entre repositorio local y remoto</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/git.html">Git en Positron</a></p>
 </section>
 <section id="flujo-de-trabajo-gitgithub" class="slide level2">
 <h2>Flujo de trabajo Git/GitHub</h2>
+
+<img data-src="Images/git_github_flow.png" style="width:80.0%" class="r-stretch"></section>
+<section id="flujo-de-trabajo-gitgithub-1" class="slide level2">
+<h2>Flujo de trabajo Git/GitHub</h2>
+<ul>
+<li><strong>Abrir repositorio</strong>: Open Folder para repositorio existente, New Folder from Git para clonar</li>
+<li><strong>Inicializar Git</strong>: Source Control view → Initialize Repository para proyectos nuevos</li>
+<li><strong>Staging y commit</strong>: Seleccionar archivos modificados, stage, commit con mensaje descriptivo</li>
+<li><strong>Sincronizar</strong>: Push para enviar cambios, Pull para traer cambios remotos</li>
+<li><strong>Branches</strong>: Crear ramas para features, cambiar entre ramas, crear pull requests</li>
+<li><strong>Resolver conflictos</strong>: Editor de merge 3-way integrado para resolver conflictos</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/git.html">Git en Positron</a></p>
 </section>
-<section id="comandos-git-esenciales" class="slide level2">
-<h2>Comandos Git esenciales</h2>
-</section>
+<section id="github" class="slide level2">
+<h2>Github</h2>
+
+<img data-src="Images/github.png" style="width:80.0%" class="r-stretch"></section>
 <section id="git-en-positron" class="slide level2">
 <h2>Git en Positron</h2>
+<ul>
+<li><strong>Source Control view</strong>: Vista dedicada en Activity Bar para gestión de Git</li>
+<li><strong>Integración nativa</strong>: Basada en VS Code, más poderosa que el Git pane de RStudio</li>
+<li><strong>Extensiones incluidas</strong>: GitHub y GitHub Pull Requests integradas por defecto</li>
+<li><strong>Visualización de diferencias</strong>: Comparación lado a lado de cambios</li>
+<li><strong>Editor de merge</strong>: Resolución visual de conflictos con editor 3-way</li>
+<li><strong>Comandos desde Command Palette</strong>: Acceso rápido a todas las operaciones Git</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/git.html">Git en Positron</a></p>
 </section>
 <section id="buenas-prácticas-con-git" class="slide level2">
 <h2>Buenas prácticas con Git</h2>
+<ul>
+<li><strong>Commits frecuentes y descriptivos</strong>: Mensajes claros sobre qué cambió y por qué</li>
+<li><strong>Branching para features</strong>: Usar ramas para nuevas funcionalidades o experimentos</li>
+<li><strong>Pull antes de Push</strong>: Siempre sincronizar cambios remotos antes de enviar</li>
+<li><strong><code>.gitignore</code></strong>: Excluir archivos temporales, outputs, datos grandes del control de versiones</li>
+<li><strong>Revisar cambios</strong>: Usar Source Control view para revisar qué se está commitando</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/git.html">Git en Positron</a> | <a href="https://happygitwithr.com/">Happy Git with R</a></p>
 </section>
-<section id="ejemplo-de-.gitignore-para-r" class="slide level2">
-<h2>Ejemplo de .gitignore para R</h2>
+<section id="más-sobre-git-y-github" class="slide level2">
+<h2>Más sobre git y github</h2>
+
+<img data-src="Images/hg.png" style="width:80.0%" class="r-stretch"><p><strong>Fuente</strong>: <a href="https://happygitwithr.com/">Happy Git with R</a></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="documentos-con-quarto" class="title-slide slide level1 center">
+<h1>Documentos con Quarto</h1>
+
 </section>
 <section id="qué-es-quarto" class="slide level2">
 <h2>¿Qué es Quarto?</h2>
+<ul>
+<li><strong>Sistema de publicación científica y técnica</strong>: Open-source de Posit</li>
+<li><strong>Multi-lenguaje</strong>: Python, R, Julia y Observable en un mismo documento</li>
+<li><strong>Un solo archivo fuente</strong>: Genera múltiples formatos desde el mismo documento</li>
+<li><strong>Reproducible</strong>: Código y resultados juntos, regenerable cuando cambian datos o supuestos</li>
+<li><strong>Soporte científico</strong>: Ecuaciones LaTeX, citas, referencias cruzadas, paneles de figuras</li>
+<li><strong>Siguiente generación de R Markdown</strong>: Compatible con archivos Rmd existentes</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://quarto.org/">Quarto</a> | <a href="https://quarto.org/docs/guide/">Guía de Quarto</a></p>
 </section>
+<section id="qué-es-quarto-1" class="slide level2">
+<h2>¿Qué es Quarto?</h2>
+
+<img data-src="Images/quarto.png" style="width:80.0%" class="r-stretch"></section>
 <section id="formatos-de-salida" class="slide level2">
 <h2>Formatos de salida</h2>
+<ul>
+<li><strong>HTML</strong>: Documentos interactivos con gráficos dinámicos, fácil de compartir</li>
+<li><strong>PDF</strong>: Formato académico con LaTeX integrado, citas y referencias</li>
+<li><strong>MS Word</strong>: Compatible con editores, fácil revisión, plantillas personalizables</li>
+<li><strong>Presentaciones</strong>: Reveal.js (HTML), PowerPoint, Beamer (PDF)</li>
+<li><strong>Sitios web y blogs</strong>: Colecciones de documentos como sitio web completo</li>
+<li><strong>Libros</strong>: Libros y manuscritos en formatos impresos (PDF, Word) y online (HTML, ePub)</li>
+<li><strong>Dashboards</strong>: Aplicaciones interactivas para visualización de datos</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://quarto.org/">Quarto</a> | <a href="https://quarto.org/docs/guide/">Guía de Quarto</a></p>
 </section>
 <section id="estructura-básica-de-un-documento-quarto" class="slide level2">
 <h2>Estructura básica de un documento Quarto</h2>
-</section>
-<section id="ejemplo-documento-html" class="slide level2">
-<h2>Ejemplo: Documento HTML</h2>
-</section>
-<section id="ejemplo-documento-pdf" class="slide level2">
-<h2>Ejemplo: Documento PDF</h2>
-</section>
-<section id="ejemplo-documento-word" class="slide level2">
-<h2>Ejemplo: Documento Word</h2>
+<ul>
+<li><strong>YAML header</strong>: Metadatos (título, autor, fecha, formato de salida)</li>
+<li><strong>Markdown</strong>: Contenido escrito en Pandoc markdown</li>
+<li><strong>Code chunks</strong>: Bloques de código ejecutables con opciones de visualización</li>
+<li><strong>Figuras y tablas</strong>: Referencias cruzadas automáticas, paneles de figuras</li>
+<li><strong>Citas</strong>: Gestión automática de referencias bibliográficas</li>
+<li><strong>Cross-references</strong>: Referencias automáticas a figuras, tablas, ecuaciones</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://quarto.org/docs/guide/">Guía de Quarto</a></p>
 </section>
 <section id="ventajas-de-quarto" class="slide level2">
 <h2>Ventajas de Quarto</h2>
+<ul>
+<li><strong>Reproducibilidad</strong>: Código y resultados integrados, regenerable automáticamente</li>
+<li><strong>Multi-formato</strong>: Un solo archivo fuente, múltiples formatos de salida</li>
+<li><strong>Multi-lenguaje</strong>: Python, R, Julia, Observable en el mismo documento</li>
+<li><strong>Citas automáticas</strong>: Gestión de referencias bibliográficas integrada</li>
+<li><strong>Cross-references</strong>: Referencias cruzadas automáticas entre elementos</li>
+<li><strong>Templates profesionales</strong>: Plantillas para artículos, reportes, presentaciones</li>
+<li><strong>Versionado</strong>: Compatible con Git para control de versiones</li>
+<li><strong>Herramientas</strong>: Funciona con Positron, VS Code, RStudio, Jupyter Lab, editores de texto</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://quarto.org/">Quarto</a> | <a href="https://quarto.org/docs/guide/">Guía de Quarto</a></p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section>
+<section id="asistente-de-ia-en-positron" class="title-slide slide level1 center">
+<h1>Asistente de IA en Positron</h1>
+
 </section>
 <section id="positron-assistant" class="slide level2">
 <h2>Positron Assistant</h2>
+<ul>
+<li><strong>Asistente de IA para ciencia de datos</strong>: Construido específicamente para workflows de data science</li>
+<li><strong>Contexto ampliado</strong>: Acceso a datos cargados, plots, historial de consola además de archivos activos</li>
+<li><strong>Chat pane dedicado</strong>: Panel de chat AI para programación, troubleshooting y planificación</li>
+<li><strong>Inline chat</strong>: Asistencia AI en contexto dentro del Editor, Notebook o Terminal</li>
+<li><strong>Code completions</strong>: Sugerencias de código directamente en Editor o Notebook</li>
+<li><strong>Preview disponible</strong>: Desde Positron 2025.07.0-204</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/assistant.html">Positron Assistant</a></p>
 </section>
+<section id="positron-assistant-1" class="slide level2">
+<h2>Positron Assistant</h2>
+
+<img data-src="Images/ia_posit.png" style="width:80.0%" class="r-stretch"></section>
 <section id="chat-y-agentes" class="slide level2">
 <h2>Chat y Agentes</h2>
+
+<img data-src="Images/ia_pos2.png" style="width:80.0%" class="r-stretch"></section>
+<section id="chat-y-agentes-1" class="slide level2">
+<h2>Chat y Agentes</h2>
+<ul>
+<li><strong>Chat pane</strong>: Panel dedicado para conversaciones con el asistente sobre código</li>
+<li><strong>Inline chat</strong>: Asistencia contextual seleccionando código en el editor</li>
+<li><strong>Code completions</strong>: Sugerencias automáticas mientras escribes código</li>
+<li><strong>Contexto de data science</strong>: El asistente entiende tus datos, plots y sesión activa</li>
+<li><strong>Multi-lenguaje</strong>: Soporte para Python, R y otros lenguajes</li>
+<li><strong>BYO-key</strong>: Trae tu propia clave de API del proveedor de modelos (Anthropic, OpenAI, GitHub Copilot, AWS Bedrock)</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/assistant.html">Positron Assistant</a></p>
 </section>
 <section id="uso-del-chat" class="slide level2">
 <h2>Uso del Chat</h2>
+<ul>
+<li><strong>Abrir Chat pane</strong>: Desde Activity Bar o Command Palette</li>
+<li><strong>Preguntas sobre código</strong>: Explicar funciones, encontrar errores, optimizar código</li>
+<li><strong>Generar código</strong>: Solicitar funciones o scripts basados en tus datos</li>
+<li><strong>Contexto automático</strong>: El asistente ve tu código seleccionado, archivos abiertos y estructura del proyecto</li>
+<li><strong>Historial de conversación</strong>: Mantiene contexto de conversaciones previas</li>
+<li><strong>Integración con consola</strong>: Puede ver outputs y resultados de ejecuciones</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/assistant.html">Positron Assistant</a></p>
 </section>
 <section id="completado-de-código-completions" class="slide level2">
 <h2>Completado de código (Completions)</h2>
+<ul>
+<li><strong>Sugerencias automáticas</strong>: Basadas en contexto de tu código y proyecto</li>
+<li><strong>Multi-línea</strong>: Genera bloques completos de código, no solo palabras</li>
+<li><strong>Context-aware</strong>: Entiende tu proyecto, datos cargados y patrones de código</li>
+<li><strong>Multi-lenguaje</strong>: Python, R, SQL y otros lenguajes soportados</li>
+<li><strong>Activar/desactivar</strong>: Configurable desde settings, se puede desactivar si no se necesita</li>
+<li><strong>Mejora con uso</strong>: Aprende de tus patrones de código y preferencias</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/assistant.html">Positron Assistant</a></p>
 </section>
 <section id="mejores-prácticas-con-ia" class="slide level2">
 <h2>Mejores prácticas con IA</h2>
+<ul>
+<li><strong>Sé específico</strong>: Preguntas claras y detalladas dan mejores respuestas</li>
+<li><strong>Proporciona contexto</strong>: Menciona paquetes, datos y objetivos específicos</li>
+<li><strong>Revisa el código</strong>: Siempre verifica y prueba el código generado</li>
+<li><strong>Aprende de las explicaciones</strong>: Usa las respuestas para entender mejor el código</li>
+<li><strong>Itera</strong>: Refina tus preguntas según necesites más información</li>
+<li><strong>Privacidad</strong>: Tu código y conversaciones van directamente al proveedor de modelos, Posit no almacena datos</li>
+<li><strong>Revisa términos</strong>: Cada proveedor de modelos tiene sus propios términos de servicio y políticas de privacidad</li>
+</ul>
+<p><strong>Fuente</strong>: <a href="https://positron.posit.co/assistant.html">Positron Assistant</a></p>
 
-</section>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="Images/ATC26.png" class="slide-logo"></p>

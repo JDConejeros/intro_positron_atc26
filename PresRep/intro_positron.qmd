@@ -15,8 +15,6 @@ format:
     background-transition: fade
     transition-speed: fast
     logo: "Images/ATC26.png"
-    #logo-position: [top-right]
-    #logo-height: 120px
     footer: '<i class="fa fa-envelope"></i> jdconejeros@uc.cl | <i class="fab fa-github"></i> JDConejeros | ATC 2026 | © Hecho en <a href="https://quarto.org/">Quarto <i class="fa fa-mug-hot"></i></a>'
     html-math-method: mathjax
     preview-links: true
@@ -28,7 +26,7 @@ format:
     fig-dpi: 300
 ---
 
-## Contenido 
+## Contenido
 
 1. **Interfaz de Positron**
 2. **Migración desde RStudio**
@@ -39,117 +37,367 @@ format:
 
 ---
 
+# Interfaz de Positron
+
 ## Componentes principales de la interfaz
+
+![](Images/positron.jpeg){width=80%}
+
+
+## Componentes principales de la interfaz
+
+- **Activity Bar**: Acceso rápido a vistas principales (Explorer, Search, Source Control, Extensions)
+- **Primary Side Bar**: Muestra contenido según la vista seleccionada (archivos, outline, Assistant)
+- **Editor**: Área central para escribir código, basado en VS Code
+- **Panel**: Consola interactiva integrada y Terminal debajo del editor
+- **Secondary Side Bar**: Panel derecho con Session (variables, plots), Connections, Help, History, Viewer
+- **Title Bar y Top Bar**: Muestra archivo activo, selector de intérprete, herramientas globales
+- **Status Bar**: Información de git branch, modo de lenguaje, versión Quarto, posición del cursor
+
+**Fuente**: [Layout de Positron](https://positron.posit.co/layout.html)
 
 ---
 
 ## Layout de Positron
 
+- **Stacked** (por defecto): Editor arriba, Consola y Terminal abajo, Variables y Plots a la derecha
+- **Side-by-side**: Editor y consola lado a lado, útil para pantallas anchas
+- **Notebook**: Enfocado en el editor, minimiza otros panes para trabajar con notebooks
+- **Assistant**: Optimizado para flujo de trabajo centrado en el Assistant
+- Componentes arrastrables y personalizables según tu flujo de trabajo
+
+**Fuente**: [Layout de Positron](https://positron.posit.co/layout.html)
+
 ---
 
 ## Personalización de la interfaz
+
+- Arrastrar y reorganizar componentes según necesidades
+- Comandos para mostrar/ocultar paneles (View: Toggle Primary Side Bar, etc.)
+- Presets de layout específicos para ciencia de datos
+- Comando "Customize Layout..." para opciones más específicas
+- Reset completo del UI a valores por defecto disponible
+
+**Fuente**: [Layout de Positron](https://positron.posit.co/layout.html)
+
+---
+
+# Migración desde RStudio
+
+## ¿Por qué migrar a Positron?
+
+- **IDE unificado**: Explora y produce en un solo entorno gratuito asistido por IA
+- **Multi-lenguaje nativo**: Python y R en el mismo entorno
+- **Basado en Code OSS**: Misma base que VS Code, con funcionalidades añadidas para ciencia de datos
+- **Asistente de IA integrado**: Positron Assistant diseñado específicamente para ciencia de datos
+- **Licencia gratuita**: Elastic License 2.0, código fuente disponible
+- **Creado por Posit**: Los mismos creadores de RStudio
+
+**Fuente**: [Positron](https://positron.posit.co/) | [Migración desde RStudio](https://positron.posit.co/migrate-rstudio.html)
 
 ---
 
 ## ¿Por qué migrar a Positron?
 
+![](Images/rstudio_vs_positron.jpeg){width=80%}
+
 ---
 
 ## Guía de migración
+
+- **Command Palette** es fundamental: Presiona `Cmd+Shift+P` (Mac) o `Ctrl+Shift+P` (Windows/Linux)
+- Muchas acciones de RStudio están disponibles como comandos en el Command Palette
+- Atajos de teclado de RStudio disponibles como opción configurable
+- La mayoría de la documentación de VS Code aplica también a Positron
+- Walkthrough interactivo: Comando "Welcome: Open Walkthrough…" → "Migrating from RStudio to Positron"
+
+**Fuente**: [Migración desde RStudio](https://positron.posit.co/migrate-rstudio.html)
 
 ---
 
 ## Comparación RStudio vs Positron
 
+- **Base**: RStudio es propietario; Positron basado en Code OSS (open source)
+- **Multi-lenguaje**: RStudio enfocado en R; Positron nativo para Python y R
+- **IA**: RStudio sin IA integrada; Positron con Assistant integrado
+- **Git**: RStudio con pane básico; Positron con integración avanzada heredada de VS Code
+- **Extensiones**: RStudio limitado; Positron con ecosistema completo de VS Code
+- **Command Palette**: RStudio lo agregó tarde; Positron lo usa como método principal de navegación
+
+**Fuente**: [Migración desde RStudio](https://positron.posit.co/migrate-rstudio.html)
+
+---
+
+# Escritura de código en R
+
+## Data Explorer
+
+- **Vista de datos tipo hoja de cálculo**: Visualización interactiva de dataframes y archivos CSV/Parquet
+- **Panel de resumen**: Estadísticas descriptivas para cada columna del dataset
+- **Barra de filtros**: Filtros temporales para columnas específicas
+- **Complementa código**: Diseñado para complementar workflows basados en código, no reemplazarlos
+- **Abre desde Variables Pane**: Click en el ícono del dataframe en el panel de variables
+- **Comandos**: `View(dataframe, "label")` en R o `%view dataframe label` en Python
+
+**Fuente**: [Data Explorer](https://positron.posit.co/data-explorer.html)
+
 ---
 
 ## Data Explorer
+
+![](Images/positron_data_explorer.png){width=80%}
 
 ---
 
 ## Ejecución de código R
 
----
+- **Consola integrada**: Consola completamente interactiva en el Panel
+- **Ejecución desde editor**: Seleccionar código y ejecutar con atajos de teclado
+- **Terminal integrado**: Terminal del sistema también disponible en el Panel
+- **Output channels**: Logs y salidas disponibles en canales del Panel
+- **Soporte para notebooks**: Jupyter notebooks y documentos Quarto ejecutables directamente
 
-## Ejemplo: Exploración de datos
+**Fuente**: [Layout de Positron](https://positron.posit.co/layout.html)
 
 ---
 
 ## Panel de Variables
 
+- **Session Pane**: Vista de todas las variables definidas en tu sesión activa
+- **Exploración de objetos**: Navegación jerárquica de estructuras de datos complejas
+- **Vista de plots**: Visualización de gráficos generados en la sesión
+- **Integración con Data Explorer**: Click en dataframes para abrir en Data Explorer
+- **Información contextual**: Detalles sobre tipos, dimensiones y estructura de objetos
+
+**Fuente**: [Layout de Positron](https://positron.posit.co/layout.html)
+
 ---
 
+# Git y GitHub
+
 ## ¿Qué es Git?
+
+- **Sistema de control de versiones distribuido**: Rastrea cambios en archivos a lo largo del tiempo
+- **Historial completo**: Mantiene registro de todas las versiones de tu proyecto
+- **Trabajo con ramas**: Permite trabajar en diferentes features simultáneamente
+- **Colaboración**: Facilita trabajo en equipo en el mismo código
+- **Revertir cambios**: Posibilidad de volver a versiones anteriores cuando sea necesario
+- **Fusionar cambios**: Integra trabajo de diferentes contribuidores
+
+**Fuente**: [Git en Positron](https://positron.posit.co/git.html)
 
 ---
 
 ## Conceptos fundamentales
 
+- **Repositorio**: Carpeta con historial de cambios, puede ser local o remoto
+- **Commit**: Snapshot de cambios con mensaje descriptivo
+- **Branch (rama)**: Línea de desarrollo independiente para experimentar sin riesgo
+- **Merge**: Combinar cambios de diferentes ramas
+- **Remote**: Repositorio en servidor (GitHub, GitLab) para sincronización
+- **Pull/Push**: Traer/enviar cambios entre repositorio local y remoto
+
+**Fuente**: [Git en Positron](https://positron.posit.co/git.html)
+
 ---
 
 ## Flujo de trabajo Git/GitHub
 
+![](Images/git_github_flow.png){width=80%}
+
 ---
 
-## Comandos Git esenciales
+## Flujo de trabajo Git/GitHub
+
+- **Abrir repositorio**: Open Folder para repositorio existente, New Folder from Git para clonar
+- **Inicializar Git**: Source Control view → Initialize Repository para proyectos nuevos
+- **Staging y commit**: Seleccionar archivos modificados, stage, commit con mensaje descriptivo
+- **Sincronizar**: Push para enviar cambios, Pull para traer cambios remotos
+- **Branches**: Crear ramas para features, cambiar entre ramas, crear pull requests
+- **Resolver conflictos**: Editor de merge 3-way integrado para resolver conflictos
+
+**Fuente**: [Git en Positron](https://positron.posit.co/git.html)
+
+---
+
+## Github 
+
+![](Images/github.png){width=80%}
 
 ---
 
 ## Git en Positron
 
+- **Source Control view**: Vista dedicada en Activity Bar para gestión de Git
+- **Integración nativa**: Basada en VS Code, más poderosa que el Git pane de RStudio
+- **Extensiones incluidas**: GitHub y GitHub Pull Requests integradas por defecto
+- **Visualización de diferencias**: Comparación lado a lado de cambios
+- **Editor de merge**: Resolución visual de conflictos con editor 3-way
+- **Comandos desde Command Palette**: Acceso rápido a todas las operaciones Git
+
+**Fuente**: [Git en Positron](https://positron.posit.co/git.html)
+
 ---
 
 ## Buenas prácticas con Git
 
+- **Commits frecuentes y descriptivos**: Mensajes claros sobre qué cambió y por qué
+- **Branching para features**: Usar ramas para nuevas funcionalidades o experimentos
+- **Pull antes de Push**: Siempre sincronizar cambios remotos antes de enviar
+- **`.gitignore`**: Excluir archivos temporales, outputs, datos grandes del control de versiones
+- **Revisar cambios**: Usar Source Control view para revisar qué se está commitando
+
+**Fuente**: [Git en Positron](https://positron.posit.co/git.html) | [Happy Git with R](https://happygitwithr.com/)
+
 ---
 
-## Ejemplo de .gitignore para R
+## Más sobre git y github
+
+![](Images/hg.png){width=80%}
+
+**Fuente**: [Happy Git with R](https://happygitwithr.com/)
+
+
+---
+
+# Documentos con Quarto
+
+## ¿Qué es Quarto?
+
+- **Sistema de publicación científica y técnica**: Open-source de Posit
+- **Multi-lenguaje**: Python, R, Julia y Observable en un mismo documento
+- **Un solo archivo fuente**: Genera múltiples formatos desde el mismo documento
+- **Reproducible**: Código y resultados juntos, regenerable cuando cambian datos o supuestos
+- **Soporte científico**: Ecuaciones LaTeX, citas, referencias cruzadas, paneles de figuras
+- **Siguiente generación de R Markdown**: Compatible con archivos Rmd existentes
+
+**Fuente**: [Quarto](https://quarto.org/) | [Guía de Quarto](https://quarto.org/docs/guide/)
 
 ---
 
 ## ¿Qué es Quarto?
 
+![](Images/quarto.png){width=80%}
+
 ---
 
 ## Formatos de salida
+
+- **HTML**: Documentos interactivos con gráficos dinámicos, fácil de compartir
+- **PDF**: Formato académico con LaTeX integrado, citas y referencias
+- **MS Word**: Compatible con editores, fácil revisión, plantillas personalizables
+- **Presentaciones**: Reveal.js (HTML), PowerPoint, Beamer (PDF)
+- **Sitios web y blogs**: Colecciones de documentos como sitio web completo
+- **Libros**: Libros y manuscritos en formatos impresos (PDF, Word) y online (HTML, ePub)
+- **Dashboards**: Aplicaciones interactivas para visualización de datos
+
+**Fuente**: [Quarto](https://quarto.org/) | [Guía de Quarto](https://quarto.org/docs/guide/)
 
 ---
 
 ## Estructura básica de un documento Quarto
 
----
+- **YAML header**: Metadatos (título, autor, fecha, formato de salida)
+- **Markdown**: Contenido escrito en Pandoc markdown
+- **Code chunks**: Bloques de código ejecutables con opciones de visualización
+- **Figuras y tablas**: Referencias cruzadas automáticas, paneles de figuras
+- **Citas**: Gestión automática de referencias bibliográficas
+- **Cross-references**: Referencias automáticas a figuras, tablas, ecuaciones
 
-## Ejemplo: Documento HTML
-
----
-
-## Ejemplo: Documento PDF
-
----
-
-## Ejemplo: Documento Word
+**Fuente**: [Guía de Quarto](https://quarto.org/docs/guide/)
 
 ---
 
 ## Ventajas de Quarto
 
+- **Reproducibilidad**: Código y resultados integrados, regenerable automáticamente
+- **Multi-formato**: Un solo archivo fuente, múltiples formatos de salida
+- **Multi-lenguaje**: Python, R, Julia, Observable en el mismo documento
+- **Citas automáticas**: Gestión de referencias bibliográficas integrada
+- **Cross-references**: Referencias cruzadas automáticas entre elementos
+- **Templates profesionales**: Plantillas para artículos, reportes, presentaciones
+- **Versionado**: Compatible con Git para control de versiones
+- **Herramientas**: Funciona con Positron, VS Code, RStudio, Jupyter Lab, editores de texto
+
+**Fuente**: [Quarto](https://quarto.org/) | [Guía de Quarto](https://quarto.org/docs/guide/)
+
+---
+
+# Asistente de IA en Positron
+
+## Positron Assistant
+
+- **Asistente de IA para ciencia de datos**: Construido específicamente para workflows de data science
+- **Contexto ampliado**: Acceso a datos cargados, plots, historial de consola además de archivos activos
+- **Chat pane dedicado**: Panel de chat AI para programación, troubleshooting y planificación
+- **Inline chat**: Asistencia AI en contexto dentro del Editor, Notebook o Terminal
+- **Code completions**: Sugerencias de código directamente en Editor o Notebook
+- **Preview disponible**: Desde Positron 2025.07.0-204
+
+**Fuente**: [Positron Assistant](https://positron.posit.co/assistant.html)
+
 ---
 
 ## Positron Assistant
+
+![](Images/ia_posit.png){width=80%}
 
 ---
 
 ## Chat y Agentes
 
+![](Images/ia_pos2.png){width=80%}
+
+---
+
+## Chat y Agentes
+
+
+- **Chat pane**: Panel dedicado para conversaciones con el asistente sobre código
+- **Inline chat**: Asistencia contextual seleccionando código en el editor
+- **Code completions**: Sugerencias automáticas mientras escribes código
+- **Contexto de data science**: El asistente entiende tus datos, plots y sesión activa
+- **Multi-lenguaje**: Soporte para Python, R y otros lenguajes
+- **BYO-key**: Trae tu propia clave de API del proveedor de modelos (Anthropic, OpenAI, GitHub Copilot, AWS Bedrock)
+
+**Fuente**: [Positron Assistant](https://positron.posit.co/assistant.html)
+
 ---
 
 ## Uso del Chat
+
+- **Abrir Chat pane**: Desde Activity Bar o Command Palette
+- **Preguntas sobre código**: Explicar funciones, encontrar errores, optimizar código
+- **Generar código**: Solicitar funciones o scripts basados en tus datos
+- **Contexto automático**: El asistente ve tu código seleccionado, archivos abiertos y estructura del proyecto
+- **Historial de conversación**: Mantiene contexto de conversaciones previas
+- **Integración con consola**: Puede ver outputs y resultados de ejecuciones
+
+**Fuente**: [Positron Assistant](https://positron.posit.co/assistant.html)
 
 ---
 
 ## Completado de código (Completions)
 
+- **Sugerencias automáticas**: Basadas en contexto de tu código y proyecto
+- **Multi-línea**: Genera bloques completos de código, no solo palabras
+- **Context-aware**: Entiende tu proyecto, datos cargados y patrones de código
+- **Multi-lenguaje**: Python, R, SQL y otros lenguajes soportados
+- **Activar/desactivar**: Configurable desde settings, se puede desactivar si no se necesita
+- **Mejora con uso**: Aprende de tus patrones de código y preferencias
+
+**Fuente**: [Positron Assistant](https://positron.posit.co/assistant.html)
+
 ---
 
 ## Mejores prácticas con IA
 
+- **Sé específico**: Preguntas claras y detalladas dan mejores respuestas
+- **Proporciona contexto**: Menciona paquetes, datos y objetivos específicos
+- **Revisa el código**: Siempre verifica y prueba el código generado
+- **Aprende de las explicaciones**: Usa las respuestas para entender mejor el código
+- **Itera**: Refina tus preguntas según necesites más información
+- **Privacidad**: Tu código y conversaciones van directamente al proveedor de modelos, Posit no almacena datos
+- **Revisa términos**: Cada proveedor de modelos tiene sus propios términos de servicio y políticas de privacidad
+
+**Fuente**: [Positron Assistant](https://positron.posit.co/assistant.html)
