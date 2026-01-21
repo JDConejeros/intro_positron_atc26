@@ -47,7 +47,6 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
-Input/Data/full_data_atc26.xlsx
 Code/00.Random
 PresRep/Images
 PresRep/intro_positron_files
