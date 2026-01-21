@@ -1,10 +1,4 @@
-# Análisis de Conocimiento en Ciencia Abierta - ATC26
-
-<div align="center">
-
-![ATC26 Logo](PresRep/Images/ATC26.png)
-
-</div>
+# Análisis de Conocimiento en Ciencia Abierta - ATC26 ![ATC26 Logo](PresRep/Images/ATC26.png)
 
 Este proyecto contiene mi análisis de los datos recopilados en la encuesta ATC26 sobre el nivel de conocimiento en ciencia abierta. Incluye scripts de análisis en R, visualizaciones, tablas resumen y un reporte completo generado con Quarto.
 
