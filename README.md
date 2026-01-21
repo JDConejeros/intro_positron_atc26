@@ -1,4 +1,4 @@
-# PreWorkshop <img src="PresRep/Images/ATC26.png" alt="ATC26 Logo" width="50%"/>
+# <img src="PresRep/Images/ATC26.png" alt="ATC26 Logo" width="5%"/> PreWorkshop 
 
 Estos son los materiales del preworkshop. El objetivo es introducir al uso de algunas herramientas de positron para el trabajo sobre datos. 
 
