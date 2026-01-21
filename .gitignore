@@ -49,7 +49,6 @@ po/*~
 rsconnect/
 Input/Data/full_data_atc26.xlsx
 Code/00.Random
-Input/
 PresRep/Images
 PresRep/intro_positron_files
 *qmd
