@@ -4,13 +4,20 @@ Esta guía explica cómo publicar la presentación en GitHub Pages.
 
 ## Configuración Inicial (Solo una vez)
 
-### Paso 1: Habilitar GitHub Pages
+### ⚠️ IMPORTANTE: Habilitar GitHub Pages PRIMERO
+
+**Debes habilitar GitHub Pages ANTES de ejecutar el workflow por primera vez:**
 
 1. Ve a tu repositorio en GitHub
 2. Haz clic en **Settings** (Configuración)
-3. En el menú lateral, busca **Pages**
-4. En **Source**, selecciona **GitHub Actions**
-5. Guarda los cambios
+3. En el menú lateral izquierdo, busca y haz clic en **Pages**
+4. En la sección **Build and deployment**:
+   - **Source**: Selecciona **GitHub Actions** (NO "Deploy from a branch")
+5. Haz clic en **Save** (Guardar)
+
+**Nota**: Si no ves la opción "GitHub Actions" en Source, asegúrate de que:
+- El repositorio no sea privado (o tienes GitHub Pro/Team)
+- Tienes permisos de administrador en el repositorio
 
 ### Paso 2: Verificar el workflow
 
@@ -50,7 +57,15 @@ Para ver el estado de la publicación:
 
 ## Solución de Problemas
 
-### El workflow falla
+### El workflow falla con error "Get Pages site failed"
+
+**Solución**: Debes habilitar GitHub Pages primero:
+1. Ve a **Settings** → **Pages**
+2. Selecciona **GitHub Actions** como Source
+3. Guarda los cambios
+4. Vuelve a ejecutar el workflow
+
+### El workflow falla al renderizar
 
 - Verifica que Quarto pueda renderizar la presentación localmente:
   ```bash
