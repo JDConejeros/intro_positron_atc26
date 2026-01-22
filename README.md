@@ -50,6 +50,38 @@ Presentación sobre Positron y herramientas de ciencia abierta que preparé:
 - **`custom.scss`**: Estilos personalizados para la presentación.
 - **`Images/`**: Imágenes que utilizo en la presentación, incluyendo el logo ATC26.
 
+Para renderizar la presentación localmente:
+```bash
+cd PresRep
+quarto render intro_positron.qmd
+```
+
+## Publicación en GitHub Pages
+
+La presentación se publica automáticamente en GitHub Pages cuando se hace push a la rama `main`. El workflow de GitHub Actions renderiza la presentación y la publica en:
+
+**https://[tu-usuario].github.io/[nombre-repo]/**
+
+### Configuración inicial (solo una vez)
+
+1. Ve a **Settings** → **Pages** en tu repositorio de GitHub
+2. En **Source**, selecciona **GitHub Actions**
+3. Guarda los cambios
+
+### Publicación automática
+
+Cada vez que hagas push a `main` con cambios en `PresRep/`, el workflow:
+- Renderiza la presentación automáticamente
+- Publica el HTML en GitHub Pages
+- La presentación estará disponible en unos minutos
+
+### Publicación manual
+
+Si necesitas forzar una publicación manual:
+1. Ve a **Actions** en tu repositorio
+2. Selecciona el workflow **Publish Presentation**
+3. Haz clic en **Run workflow** → **Run workflow**
+
 ## Requisitos
 
 - **R** (versión 4.0 o superior)
